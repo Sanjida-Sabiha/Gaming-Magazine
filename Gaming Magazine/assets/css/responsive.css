@@ -1,0 +1,338 @@
+/* Medium Layout: 1280px. 
+
+Checking Size: 1000px
+*/
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .container{
+        width: 970px;
+    }
+
+    /* Index Page */
+    .modal-body form {
+        margin-left: 28px;
+    }
+    .modal-body input[type="text"] {
+        width: 90%;
+    }
+    .modal-body button {
+        width: 8%;
+    }
+    .column-box {
+        flex-basis: 29%;
+        margin-left: 36px;
+    }
+    .trending-box{
+        flex-basis: 50%;
+    }
+    .single-trending {
+        flex-direction: column;
+    }
+    .trend-img{
+        flex-basis: 100%;
+    }
+    .trend-info {
+        flex-basis: 100%;
+        margin-left: 0;
+        margin-top: 14px;
+    }
+    .trending-area .recent-topics {
+        flex-basis: 40%;
+    }
+    .footer-area .menu ul {
+        margin: 0 194px;
+    }
+    .copyright p {
+        margin: 0 209px;
+    }
+
+    /* Gaming News */
+    .game {
+        flex-basis: 65%;
+    }
+    .search-game {
+        flex-basis: 35%;
+    }
+    .form form input {
+        width: 83%;
+        height: 56px;
+    }
+    .recent-post h1::before, .category h1::before, .popular-posts h1::before {
+        width: 168px;
+    }
+}
+
+/* Tablet Layout: 768px. 
+
+Checking Size: 800px
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .container{
+        width: 750px;
+    }
+
+    /* Index Page */
+    .header {
+        flex-direction: column;
+    }
+    .logo {
+        margin-bottom: 26px;
+    }
+    .modal-body form {
+        margin-left: 43px;
+    }
+    .modal-body input[type="text"] {
+        width: 85%;
+    }
+    .modal-body button {
+        width: 8%;
+    }
+    .mesonary-box {
+        flex-basis: 49%;
+    }
+    .hot-topics {
+        flex-basis: 100%;
+    }
+    .single-topics {
+        flex-basis: 53%;
+        margin-top: 15px;
+    }
+    .recent-topics {
+        flex-basis: 47%;
+        margin-top: 15px;
+    }
+    .promo {
+        padding-top: 139px;
+    }
+    .promo-info {
+        flex-basis: 50%;
+        margin-left: 36px;
+    }
+    .promo-link {
+        flex-basis: 35%;
+    }
+    .recommend-columns {
+        flex-direction: column;
+    }
+    .column-img {
+        flex-basis: 50%;
+    }
+    .column-info {
+        flex-basis: 50%;
+    }
+    .trending {
+        flex-direction: column;
+    }
+    .trending-box {
+        flex-basis: 100%;
+    }
+    .trend-img {
+        flex-basis: 40%;
+    }
+    .trend-info {
+        flex-basis: 58%;
+    }
+    .footer-area .menu ul {
+        margin: 0 73px;
+    }
+    .copyright p {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.7);
+        padding: 15px 0;
+        max-width: 600px;
+        margin: 0 89px;
+    }
+
+    /* Gaming News */
+    .gaming-news {
+        flex-direction: column;
+    }
+    .game {
+        flex-basis: 100%;
+    }
+    .game-img {
+        flex-basis: 50%;
+    }
+    .game-info {
+        flex-basis: 50%;
+    }
+    .search-game {
+        flex-basis: 100%;
+        margin-top: 57px;
+    }
+    .form form input {
+        width: 92%;
+    }
+    .recent-post h1::before, .category h1::before, .popular-posts h1::before {
+        width: 77%;
+       
+    }
+    .popular-posts .single-column {
+        flex-direction: column;
+    }
+    .popular-posts .column-img {
+        flex-basis: 100%;
+    }
+    .popular-posts .column-info {
+        flex-basis: 100%;
+        padding: 24px 0;
+    }
+    .popular-posts .title a {
+        font-size: 26px;
+    }
+}
+
+/* Mobile Layout: 350px
+
+Checking Size: 400px
+*/
+@media only screen and (max-width: 767px){
+    .container{
+        width: 350px;
+    }
+
+    /* Index Page */
+
+    .top {
+        flex-direction: column;
+        margin: 0 71px;
+    }
+    .top-left {
+        padding-left: 15px;
+        padding-bottom: 20px;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .logo {
+        margin-bottom: 26px;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu ul li {
+        padding: 7px 16px 10px;
+    }
+    .modal-body form {
+        margin-top: 186px;
+        margin-left: 15px;
+    }
+    .modal-body input[type="text"] {
+        width: 75%;
+    }
+    .modal-body button {
+        width: 18%;
+    }
+    .mesonary {
+        flex-direction: column;
+    }
+    .mesonary-box {
+        flex-basis: 100%;
+    }
+    .topics-box {
+        flex-direction: column;
+    }
+    .hot-topics {
+        flex-basis: 100%;
+    }
+    .single-topics {
+        flex-basis: 100%;
+    }
+    .recent-topics {
+        flex-basis: 100%;
+        margin-top: 25px;
+    }
+    .promo {
+        padding-top: 205px;
+        flex-direction: column;
+    }
+    .promo-info {
+        flex-basis: 100%;
+        margin-top: -188px;
+        margin-left: 0;
+    }
+    .promo-info p {
+        text-align: center;
+    }
+    .promo-link {
+        flex-basis: 100%;
+        margin-top: 0; 
+        margin-bottom: 27px;
+    }
+    .recommend-columns {
+        flex-direction: column;
+    }
+    .column-box {
+        flex-basis: 100%;
+    }
+    .trending {
+        flex-direction: column;
+    }
+    .single-trending {
+        flex-direction: column;
+    }
+    .trend-img {
+        flex-basis: 100%;
+    }
+    .trend-info {
+        flex-basis: 100%;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .links a {
+        padding: 11px 16px 8px;
+    }
+    .footer-area .menu ul {
+        margin: 0 68px;
+    }
+    .footer-area .menu ul li {
+        padding: 13px 11px 18px;
+    }
+    .copyright p {
+        font-size: 15px;
+        max-width: 100%;
+        margin: 0 39px;
+    }
+
+    /* Gaming News */
+    .gaming-news {
+        flex-direction: column;
+    }
+    .game {
+        flex-basis: 100%;
+    }
+    .game-img {
+        flex-basis: 100%;
+        padding-top: 390px;
+    }
+    .game-info {
+        flex-basis: 100%;
+        margin-top: 30px;
+    }
+    .recent-post h1::before, .category h1::before, .popular-posts h1::before {
+        width: 164px;
+    }
+    .popular-posts .single-column {
+        flex-direction: column;
+    }
+    .popular-posts .column-img {
+        flex-basis: 100%;
+    }
+    .popular-posts .column-info {
+        flex-basis: 100%;
+        padding: 24px 0;
+    }
+    .popular-posts .title a {
+        font-size: 22px;
+    }
+}
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .container{
+        width: 450px;
+    }
+
+}

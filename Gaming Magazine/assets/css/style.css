@@ -1,0 +1,862 @@
+/*    
+    Template Name: Gaming Magazine
+    Author - Sanjida
+    Description: 
+    Version: 1.0
+
+    Index
+    ====
+    01. Reset CSS
+    02. Header Top
+    03. Header Area
+    04. Entry Area
+    05. Topics Area
+    06. Promo Area
+    07. Recommend Area
+    08. Trending Area
+    09. Footer Area
+    10. Gaming Banner Area
+    11. Gaming News Area
+*/
+
+/* 01. Reset CSS */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #181818;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+.pt-80{
+    padding-top: 80px;
+}
+.pb-80{
+    padding-bottom: 80px;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* 02. Header Top */
+.header-top{
+    padding: 15px 0;
+}
+.top {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+    border-bottom: 1px solid #242424;
+    padding-bottom: 15px;
+}
+.top-left{
+    padding-left: 15px;
+}
+.top-left a{
+    color: #888888;
+    transition: .7s;
+}
+.top-left a i {
+    width: 28px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+}
+.top-left a i:hover{
+    color: #ff2851;
+}
+.top-right{
+    padding-right: 15px;
+}
+.top-right a{
+    color: #888888;
+    transition: .7s;
+    font-size: 16px;
+}
+.top-right a:hover{
+    color: #ff2851;
+}
+.top-right a i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+}
+.top-right a:hover i{
+    color: #ff2851;
+}
+
+/* 03. Header Area */
+.header-area{}
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+}
+.logo{}
+.logo a{
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: .7s;
+}
+.logo a:hover{
+    color: #ff2851;
+}
+.logo a img{
+    margin-right: 15px;
+}
+.menu{}
+.menu ul{
+    display: flex;
+    flex-flow: row wrap;
+    margin:0;
+}
+.menu ul li{
+    padding: 0 16px;
+}
+.menu ul li a{
+    color: #888888;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .7s;
+}
+.menu ul li a:hover{
+    color: #ff2851;
+}
+.modal-body form {
+    margin-top: 270px;
+    margin-left: 290px;
+}
+.modal-body input[type="text"] {
+    width: 70%;
+    height: 70px;
+}
+.modal-body button {
+    width: 5%;
+    height: 70px;
+    margin-left: -5px;
+}
+.modal-body button i {
+    width: 25px;
+    height: 17px;
+    line-height: 17px;
+    font-size: 22px;
+}
+
+/* 04. Entry Area */
+.mesonary-area{}
+.mesonary{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+}
+.mesonary-box{
+    flex-basis: 33%;
+}
+.single-mesonary{
+    position: relative;
+    padding-top: 513px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .8;
+}
+.single-first {
+    position: relative;
+    padding-top: 252px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .8;
+    margin-bottom: 8px;
+}
+.mesonary-info {
+	position: absolute;
+	z-index: 999;
+	bottom: 0;
+}
+.mesonary-sec {
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+}
+.mesonary-sec .title a{
+    font-size: 22px;
+}
+.link {
+    display: inline-block;
+    border: 1px solid transparent;
+    background-color: black;
+    margin-left: 20px;
+    transition: .7s;
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 3px 8px;
+}
+.link a{}
+.link:hover{
+    background-color: #037fff;
+}
+.title {
+    display: block;
+    padding: 15px 20px;
+}
+.topics-area .single-info .title {
+    padding-bottom: 2px;
+}
+.title a {
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: .7s;
+}
+.title a:hover{
+    color: #ff2851;
+}
+.icon {
+	padding: 0 20px 15px;
+}
+.author{}
+.author a, .date a {
+    font-size: 16px;
+    text-transform: capitalize;
+    padding-right: 15px;
+    color: white;
+    transition: .7s;
+}
+.single-topics .single-info .icon .author a, .date a {
+    font-size: 14px;
+    color: #989898;
+}
+.single-topics .single-info .icon .author a i{
+    color: #989898;
+}
+.single-topics .single-info .icon .date a i {
+    font-size: 14px;
+    color: #989898;
+}
+.author a i {
+    width: 25px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: white;
+}
+.author a:hover{
+    color: #037fff;
+}
+.date{}
+.mesonary-info .date a {
+    font-size: 16px;
+    color: white;
+}
+.recent-topics .date a {
+    font-size: 16px;
+    color: white;
+}
+.date a{}
+.date a i{
+    width: 20px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: white;
+}
+.info{
+    padding: 15px 20px 25px;
+}
+.info a{
+    font-size: 17px;
+    line-height: 25px;
+    color: white;
+    text-transform: capitalize;
+}
+
+/* 05. Topics Area */
+.topics-area{}
+.topics {
+    background-color: #111111;
+    padding: 25px;
+}
+.topics h1, .news h1, .recommend h1, .column-box h1, .trending-box h1, .trend-link h1, .trend-topic h1 {
+    position: relative;
+    font-size: 27px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: white;
+    margin-left: 13px;
+    margin-bottom: 35px;
+    margin-top: 11px;
+}
+.topics h1::before, .news h1:before, .recommend h1::before, .column-box h1:before, .trending-box h1:before, .trend-link h1::before, .trend-topic h1::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 34px;
+    border: 1px solid #ff2851;
+    background-color: #ff2851;
+    margin-left: -12px;
+}
+.topics-box{
+    display: flex;
+    flex-flow: row wrap;
+}
+.hot-topics{
+    flex-basis: 32%;
+}
+.mesonary-box {
+    margin-bottom: 8px;
+}
+.single-topics{
+    flex-basis: 35%;
+}
+.single-info{}
+.single-info .title a {
+    font-size: 21px;
+}
+.single-topics .icon {
+    padding-bottom: 9px;
+}
+.recent-topics{
+    flex-basis: 33%;
+}
+.single-box{
+    background-color: rgba(40,40,40,1);
+}
+.recent-topics .single-info {
+    margin-bottom: 33px;
+}
+.recent-topics .single-box .icon {
+    padding-bottom: 15px;
+}
+
+/* 06. Promo Area */
+.promo-area{}
+.promo {
+    padding-top: 123px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.promo-info {
+    flex-basis: 40%;
+    margin-top: -99px;
+    margin-left: 30px;
+    text-transform: capitalize;
+    color: white;
+}
+.promo-info span {
+    font-size: 24px;
+    display: block;
+    padding-bottom: 10px;
+}
+.promo-info p{
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+.promo-link{
+    flex-basis: 50%;
+    margin-top: -115px;
+}
+.promo-link a {
+    display: inline-block;
+    padding: 12px 26px;
+    border: 1px solid transparent;
+    background-color: #ff2851;
+    color: white;
+    text-transform: capitalize;
+    font-size: 19px;
+    transition: .7s;
+}
+.promo-link a:hover{
+    background-color: #d2d1d1;
+    color: black;
+}
+
+/* 07. Recommend Area */
+.recommend-area{}
+.recommend {
+    background-color: #111111;
+    padding: 40px;
+}
+.recommend-box{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+}
+.recommend-area .single-mesonary {
+    padding-top: 262px;
+}
+.recommend-area .mesonary-info {
+    margin-top: -112px;
+}
+.recommend-columns{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+    background-color: #111111;
+}
+.column-box {
+    flex-basis: 30%;
+    margin-left: 38px;
+}
+.column-box h1 {
+    margin: 24px 13px 54px;
+}
+.single-column {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 0 35px;
+    align-items: flex-start;
+}
+.column-img{
+    flex-basis: 40%;
+}
+.column-img a{}
+.column-img a img {
+    max-width: 100%;
+    margin-top: 6px;
+}
+.column-info{
+    flex-basis: 60%;
+}
+.column-info .title {
+    padding-top: 0;
+    padding-left: 9px;
+    padding-bottom: 5px;
+}
+.column-info .title a{
+    font-size: 19px;
+}
+.column-info .icon {
+    padding: 0 9px;
+}
+.column-info .date{}
+.column-info .date a{
+    font-size: 15px;
+}
+.column-info .date a i{
+    font-size: 14px;
+}
+
+/* 08. Trending Area */
+.trending-area{
+    padding-bottom: 80px;
+}
+.trending{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+}
+.trending-box{
+    flex-basis: 60%;
+}
+.single-trending {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 0 30px;
+}
+.trend-img{
+    flex-basis: 30%;
+}
+.trend-img a{}
+.trend-img a img{
+    width: 100%;
+} 
+.trend-info {
+    flex-basis: 68%;
+    margin-left: 12px;
+}
+.trend {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #ff2851;
+    transition: .7s;
+    text-transform: capitalize;
+}
+.trend:hover{
+    color: #828282;
+}
+.trend-info .title {
+    padding: 5px 7px;
+}
+.trend-info .title a {
+    font-size: 23px;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: .7s;
+}
+.trend-info .title a:hover{
+    color: #ff2851;
+}
+.trend-info .icon {
+    padding: 0 6px;
+}
+.trend-info .info {
+    padding: 10px 5px 19px;
+}
+.trend-info .author a, .trend-info .date a {
+    font-size: 13px;
+    text-transform: capitalize;
+    padding-right: 15px;
+    color: white;
+    transition: .7s;
+}
+.trend-info .author a i, .trend-info .date a i {
+    width: 18px;
+    font-size: 12px;
+}
+.trend-link{}
+.trend-link h1{
+    margin-top: 65px;
+}
+.links{}
+.links a {
+    padding: 11px 21px 8px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    margin-left: 3px;
+    transform: scale(1);
+}
+.links a:hover{
+    transform: scale(1.1);
+}
+.links a i {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 21px;
+    text-align: center;
+}
+.links a:first-child{
+    background-color: #037fff;
+    color: white;
+}
+.links a:nth-child(2){
+    background-color: #46aef7;
+    color: white;
+}
+.links a:nth-child(3){
+    background-color: #f01818;
+    color: white;
+}
+.links a:nth-child(4){
+    background-color: #f00075;
+    color: white;
+}
+.links a:nth-child(5){
+    background-color: #037fff;
+    color: white;
+}
+.trend-topic{}
+.trend-topic h1 {
+    margin-top: 65px;
+}
+.topic{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+}
+.topic-name{
+    flex-basis: 50%;
+}
+.topic-name:last-child {
+    text-align: end;
+}
+.topic-name span {
+    display: block;
+    padding: 0 0 24px;
+}
+.topic-name span a {
+    font-size: 17px;
+    text-transform: capitalize;
+    color: white;
+    transition: .7s;
+}
+.topic-name span a:hover{
+    color: #ff2851;
+}
+
+/* 09. Footer Area */
+.footer-area{
+    background-color: black;
+}
+.footer{}
+.footer-area .logo {
+    text-align: center;
+    padding: 56px 0 30px;
+}
+.footer-area .logo a{}
+.footer-area .logo a img{}
+.footer-area .menu{}
+.footer-area .menu ul {
+    margin: 0 300px;
+}
+.footer-area .menu ul li {
+    padding: 13px 24px 53px;
+}
+.footer-area .menu ul li a{
+    color: white;
+    transition: .7s;
+}
+.footer-area .menu ul li a:hover{
+    color: #ff2851;
+}
+.copyright {
+    position: relative;
+}
+.copyright::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #242424;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+}
+.copyright p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 15px 0;
+    max-width: 600px;
+    margin: 0 314px;
+}
+
+/* 10. Gaming Banner Area */
+.gamesbanner-area{
+    background-color: #111111;
+    margin: 30px 0;
+}
+.games-banner {
+    padding: 69px 0;
+}
+.games-banner ul {
+    display: flex;
+    flex-flow: row wrap;
+    margin: -62px -30px 0;
+}
+.games-banner ul li{
+    text-transform: capitalize;
+    color: white;
+    font-size: 14px;
+    padding-right: 12px;
+}
+.games-banner ul li a {
+    text-transform: capitalize;
+    color: #828282;
+    font-size: 14px;
+    padding-right: 3px;
+}
+.games-banner span {
+    display: block;
+    font-size: 32px;
+    text-transform: capitalize;
+    color: white;
+    padding: 95px 0 30px;
+}
+
+/* 11. Gaming News Area */
+.gamingnews-area{}
+.gaming-news{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+}
+.game{
+    flex-basis: 69%;
+}
+.single-game {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 0 0 38px;
+}
+.game-img {
+    flex-basis: 45%;
+    padding-top: 390px;
+    background-position: center;
+    background-size: cover;
+}
+.game-info{
+    flex-basis: 44%;
+}
+.game-info .date a {
+    color: white;
+}
+.game-info p {
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 17px;
+    padding-top: 13px;
+    text-transform: capitalize;
+}
+.game-link{}
+.game-link a {
+    display: inline-block;
+    padding-left: 16px;
+    text-transform: capitalize;
+    color: #828282;
+    font-size: 16px;
+}
+.game-link a i {
+    width: 35px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: .7s;
+}
+.game-link:hover{
+    transform: translateX(0);
+}
+.game-link a:hover{
+    color: #ff2851;
+}
+.game-link a:hover i{
+    transform: translateX(6px);
+    color: #ff2851;
+}
+.pagination, .pagination-pagenumber {
+	margin: 10px 0 0;
+}
+.pagination span:first-child, .pagination-pagenumber span:last-child {
+    border: 1px solid transparent;
+    padding: 5px 15px;
+    background-color: #828282;
+    transition: .7s;
+    border-radius: 5px;
+}
+.pagination span a:first-child:hover, .pagination-pagenumber span a:last-child:hover{
+    color: white;
+}
+.pagination span, .pagination-pagenumber span{
+    margin-right: 33px;
+    padding: 5px 0;
+}
+.pagination span a, .pagination-pagenumber span a{
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    transition: .7s;
+}
+.pagination span a:hover, .pagination-pagenumber span a:hover{
+    color: #828282;
+}
+.pagination i, .pagination-pagenumber i {
+    width: 37px;
+    height: 33px;
+    line-height: 33px;
+    font-size: 16px;
+    text-align: center;
+}
+.search-game {
+    flex-basis: 26%;
+}
+.form{}
+.form form{}
+.form form input {
+    width: 82%;
+    height: 54px;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+.form form button {
+    margin-left: -5px;
+}
+.form form button i {
+    width: 50px;
+    height: 53px;
+    line-height: 53px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #888888;
+    color: white;
+    border-color: none;
+}
+.recent-post{}
+.recent-post h1,.category h1, .popular-posts h1 {
+    font-size: 23px;
+    text-transform: capitalize;
+    padding: 48px 0 10px;
+    color: white;
+    position: relative;
+}
+.recent-post h1::before, .category h1::before, .popular-posts h1::before {
+    content: "";
+    position: absolute;
+    width: 141px;
+    height: 2px;
+    background-color: #242424;
+    margin-top: 14px;
+    margin-left: 158px;
+}
+.single-post{
+    margin-bottom: 30px;
+}
+.single-post img{
+    width: 100%;
+    padding-bottom: 10px;
+}
+.single-post span{
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+    text-transform: capitalize;
+    color: white;
+    transition: .7s;
+}
+.single-post span:hover{
+    color: #ff2851;
+}
+.category{}
+.category h1{
+    padding-bottom: 20px;
+}
+.popular-posts .column-info {
+    flex-basis: 60%;
+    padding: 24px 0;
+}
+.popular-posts .title a {
+    font-size: 15px;
+}
+.popular-posts .column-info .date a{
+    color: white;
+}
+.popular-posts .column-info .date a:hover {
+    color: #ff2851;
+}
+
